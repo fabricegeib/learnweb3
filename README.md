@@ -104,6 +104,8 @@ npm install --save-dev hardhat
 npx hardhat
 ```
 
+git tag -a v1.0 -m "First release for v1.0"
+
 ## Sophomore
 https://www.learnweb3.io/tracks/sophomore
 
