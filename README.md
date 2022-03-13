@@ -21,11 +21,14 @@ https://www.learnweb3.io/tracks/freshman
 
 ### Install a http server (use any you like)
 ```shell
-npm install -g lite-server #install lite-server globally
+npm install --global http-server
+
+npx http-server
+npx http-server --cors
 
 # or
 
-npm install --global http-server
+npm install -g lite-server #install lite-server globally
 ```
 
 ### Create and Serve a Simple Webpage
@@ -48,6 +51,8 @@ Create a file `index.html`
     </body>
 </html>
 ```
+0xCe1b98929515223B576fE6DA62102276C0fb8604
+
 
 ⚒️ Skill test can be found at the end of the level⚒️ Level 8 - Cryptocurrency ❌ (0%)
 
