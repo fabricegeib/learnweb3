@@ -104,7 +104,9 @@ npm install --save-dev hardhat
 npx hardhat
 ```
 
-git tag -a v1.0 -m "First release for v1.0"
+Create a basic sample project
+
+git tag -a v1.0.1 -m "First release for v1.0.1"
 
 ## Sophomore
 https://www.learnweb3.io/tracks/sophomore
