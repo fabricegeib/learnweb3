@@ -94,6 +94,14 @@ https://rinkeby.etherscan.io/token/0xc4bd4275ba2a12e2aad0c7ff4fb57ab8c3b07f26
 ### ⚒️ Level 9 - NFT ❌ (0%)
 Skill test can be found at the end of the level
 
+Setup Hardhat :
+```shell
+mkdir NFT-Tutorial
+cd  NFT-Tutorial
+npm init --yes
+npm install --save-dev hardhat
+```
+
 ## Sophomore
 https://www.learnweb3.io/tracks/sophomore
 
