@@ -52,7 +52,12 @@ Create a file `index.html`
     </body>
 </html>
 ```
+
+### Contract on Rinkeby
 0xCe1b98929515223B576fE6DA62102276C0fb8604
+
+https://rinkeby.etherscan.io/address/0xce1b98929515223b576fe6da62102276c0fb8604
+
 
 
 ⚒️ Skill test can be found at the end of the level⚒️ Level 8 - Cryptocurrency ❌ (0%)
