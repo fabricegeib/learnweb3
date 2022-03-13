@@ -17,7 +17,8 @@ https://www.learnweb3.io/tracks/freshman
 
 🔗 Level 6 - Solidity ✅ (100%)
 
-⚒️ Skill test can be found at the end of the level⚒️ Level 7 - dApp ❌ (0%)
+⚒️ Level 7 - dApp ✅ (100%)
+⚒️ Skill test can be found at the end of the level
 
 ### Install a http server (use any you like)
 ```shell
