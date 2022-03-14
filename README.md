@@ -2,6 +2,7 @@
 
 ## Freshman
 https://www.learnweb3.io/tracks/freshman
+
 https://github.com/fabricegeib/learnweb3/tree/master/freshman
 
 ### 🔗 Level 0 - Basic Programming ✅ (100%)
