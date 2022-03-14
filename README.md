@@ -91,7 +91,7 @@ LearnWeb3 Token (1000 LW3)
 https://rinkeby.etherscan.io/address/0xc4bd4275ba2a12e2aad0c7ff4fb57ab8c3b07f26
 https://rinkeby.etherscan.io/token/0xc4bd4275ba2a12e2aad0c7ff4fb57ab8c3b07f26
 
-### ⚒️ Level 9 - NFT ❌ (0%)
+### ⚒️ Level 9 - ✅ (100%)
 Skill test can be found at the end of the level
 
 Setup Hardhat :
@@ -107,6 +107,65 @@ npx hardhat
 Create a basic sample project
 
 git tag -a v1.0.1 -m "First release for v1.0.1"
+
+npm install --save-dev "hardhat@^2.9.1" "@nomiclabs/hardhat-waffle@^2.0.0" "ethereum-waffle@^3.0.0" "chai@^4.2.0" "@nomiclabs/hardhat-ethers@^2.0.0" "ethers@^5.0.0"
+
+npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+
+### Write NFT Contract
+npm install @openzeppelin/contracts
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+// Import the openzepplin contracts
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+
+// GameItem is  ERC721 signifies that the contract we are creating imports ERC721 and follows ERC721 contract from openzeppelin
+contract GameItem is ERC721 {
+
+    constructor() ERC721("GameItem", "ITM") {
+        // mint an NFT to yourself
+        _mint(msg.sender, 1);
+    }
+}
+```
+
+`npx hardhat compile`
+
+### Deploy
+In folder `script` create a file `deploys.js `
+```js
+// Import ethers from Hardhat package
+const { ethers } = require("hardhat");
+
+async function main() {
+  /*
+A ContractFactory in ethers.js is an abstraction used to deploy new smart contracts,
+so nftContract here is a factory for instances of our GameItem contract.
+*/
+  const nftContract = await ethers.getContractFactory("GameItem");
+
+  // here we deploy the contract
+  const deployedNFTContract = await nftContract.deploy();
+
+  // print the address of the deployed contract
+  console.log("NFT Contract Address:", deployedNFTContract.address);
+}
+
+// Call the main function and catch if there is any error
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+    });
+```
+NFT Contract Address: 0x0EB540EDd3e58794Ca136218bA5c10B9c66b0164
+
+https://rinkeby.etherscan.io/address/0x0EB540EDd3e58794Ca136218bA5c10B9c66b0164
+https://rinkeby.etherscan.io/token/0x0EB540EDd3e58794Ca136218bA5c10B9c66b0164
 
 ## Sophomore
 https://www.learnweb3.io/tracks/sophomore
